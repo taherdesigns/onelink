@@ -1,20 +1,3 @@
-/*
-* littlelink V1
-* https://littlelink.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/21/2019
-*
-* Built using:
-*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
@@ -204,7 +187,7 @@ hr {
   height: 128px;
   object-fit: cover;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 /* open-sans-regular - vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic */
