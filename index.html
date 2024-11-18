@@ -3,35 +3,106 @@
 
 <head>
 
+  <!-- Page Information
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Taher S. Rampurawala - Landing Page</title>
-  <meta name="description" content="https://onelink.taherdesigns.in">
+  <meta name="description" content="https://littlelink.io">
   <meta name="author" content="Taher R">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="stylesheet" href="css/skeleton-dark.css">
+    <!-- Themes:
+            Auto:   css/skeleton-auto.css
+            Light:  css/skeleton-light.css
+            Dark:   css/skeleton-dark.css
+     -->
+    <link rel="stylesheet" href="css/skeleton-auto.css">
+
+    <!-- Brand Styles -->
     <link rel="stylesheet" href="css/brands.css">
 
 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/TD-Logo.png">
 
 </head>
 
 <body>
 
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
       <div class="column" style="margin-top: 10%">
 
-        <img src="images/TD-Logo.png" class="avatar" srcset="images/TD-Logo.png" alt="">
+        <!-- 
 
-        <h1 role="heading">Taher Designs</h1>
+          ## Getting Started with LittleLink
 
+          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
+
+          You can add your own brand or others brands you may need in the `css/brands.css` file. 
+
+          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
+
+          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
+
+          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
+
+          Edit the "Short Bio" section tell users about yourself or your brand.
+
+        -->
+
+        <!-- Your Image Here -->
+        <img src="images/Taher R.png" class="avatar" srcset="images/Taher R.png" alt="">
+
+        <!-- Title -->
+        <h1 role="heading">Taher S. Rampurawala</h1>
+
+        <!-- Short Bio -->
         <p>Welcome to my page! I'm Taher, a passionate and creative graphic designer with a knack for bringing ideas to life through compelling visuals. Here, you'll find links to my resume, portfolio, LinkedIn, and other social media profiles where you can explore my work, connect with me, and stay updated on my latest projects. Let's create something amazing together! 🌟</p>
 
+        <!--
+
+          ## Breaking down <a> attributes:
+          
+          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
+          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
+          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
+
+          2.) Replace the # in href="#" with the desired target URL for the button.
+
+          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
+
+          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
+          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
+
+          5.) role="button" | The button role identifies an element as a button to assistive technology such as screen readers.
+
+          ## Breaking down the <img> attributes:
+          
+          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
+
+          2.) src="images/icons/[icon-name].svg" | This defines the icon you would like to display from the 'images/icons/' folder. For example, you can change this to src="images/icons/discord.svg" to use the Discord icon.
+          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
+
+          3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
+          This can improve the experience for assistive technology users by hiding what is essentially duplicated
+
+        -->
+
+        <!-- Portfolio -->
+        <a class="button button-default" href="https://pdf.taherdesigns.in/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/read-cv.svg" alt="CV Icon">My Portfolio</a><br>
+        
         <!-- Behance -->
         <a class="button button-behance" href="https://www.behance.net/taherdesigns" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/behance.svg" alt="Behance Logo">Behance</a><br> 
 
@@ -45,18 +116,21 @@
         <a class="button button-linked" href="https://www.linkedin.com/in/taherdesigns/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a><br>
 
         <!-- Telegram -->
-        <a class="button button-telegram" href="https://t.me/buddhapundit" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a><br>
+        <a class="button button-telegram" href="https://t.me/taherdesigns/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a><br>
 
-        <!-- WhatsApp -->
-        <a class="button button-whatsapp" href="https://wa.me/919372041047" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp</a><br>
-
+        <!-- WhatsApp UAE -->
+        <a class="button button-whatsapp" href="https://wa.me/971558865047" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp (🇦🇪)</a><br>
+        
+        <!-- WhatsApp India -->
+        <a class="button button-whatsapp" href="https://wa.me/919372041047" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp (🇮🇳)</a><br>
+        
         <!-- YouTube -->
         <a class="button button-yt" href="https://www.youtube.com/@taherdesigns" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">YouTube</a><br>        
 
-        <!-- Email -->
-        <a class="button button-default" href="mailto:hello@taherdesigns.in" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email-alt.svg" alt="Email Icon">Email Me</a><br>
+        <!-- Generic Email Alt -->
+        <a class="button button-default" href="mailto:rampurawalataher@outlook.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email-alt.svg" alt="Email Icon">Email Me</a><br>
 
-        <!-- Website -->
+        <!-- Generic Website -->
         <a class="button button-default" href="https://www.taherdesigns.in" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Portfolio Website</a><br>
         <br>
 
